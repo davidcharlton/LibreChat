@@ -1,0 +1,14 @@
+endpoints:
+  custom:
+    - name: "RAGAgent"
+      apiKey: "xxx"
+      baseURL: "http://10.0.2.5:8000/rpc" 
+      models:
+        default: ["RAGv1"]
+      titleConvo: true
+      titleModel: "RAGv1"
+      modelDisplayLabel: "RAG Bot"
+server:
+  port: 3080
+features:
+  disableMongo: true
