@@ -2,11 +2,11 @@ version: "1.0"
 
 endpoints:
   custom:
-    - name: "ZionGPT"
+    - name: "ZionVM"
       apiKey: "xxx"
-      baseURL: "http://10.0.2.5:8000/rpc" 
+      baseURL: "http://10.0.2.5:8000" 
       models:
-        default: ["RAGv1"]
+        default: ["Avaniel"]
       titleConvo: true
       titleModel: "Avaniel"
       modelDisplayLabel: "Avaniel"
