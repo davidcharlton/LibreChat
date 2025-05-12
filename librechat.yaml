@@ -1,4 +1,7 @@
-version: "1.2.6"
+version: "1.2.7"
+
+auth:
+  defaultProvider: "google"
 
 endpoints:
   custom:
@@ -10,3 +13,4 @@ endpoints:
       titleConvo: true
       titleModel: "Avaniel"
       modelDisplayLabel: "Avaniel"
+
