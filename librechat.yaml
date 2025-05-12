@@ -4,7 +4,7 @@ endpoints:
   custom:
     - name: "ZionVM"
       apiKey: "xxx"
-      baseURL: "http://10.0.2.5:8000"
+      baseURL: "http://10.0.2.5:8000/v1"
       models:
         default: ["Avaniel"]
       titleConvo: true
