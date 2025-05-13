@@ -1,7 +1,4 @@
-version: "1.2.7"
-
-auth:
-  defaultProvider: "google"
+version: "1.2.8"
 
 endpoints:
   custom:
