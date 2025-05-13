@@ -30,7 +30,7 @@ const findUser = async function (searchCriteria, fieldsToSelect = null) {
   if (fieldsToSelect) {
     query.select(fieldsToSelect);
   }
-  return await query.lean();
+  return await query;
 };
 
 /**
