@@ -1,4 +1,4 @@
-version: "1.2.8"
+version: "1.2.9"
 
 endpoints:
   custom:
@@ -6,8 +6,14 @@ endpoints:
       apiKey: "xxx"
       baseURL: "http://10.0.2.5:8000/v1"
       models:
-        default: ["Avaniel"]
+        default: ["avaniel"]
+        available:
+          - label: "Avaniel"
+            name: "avaniel"
+          - label: "Ace"
+            name: "ace"
+          - label: "Theophilus"
+            name: "theophilus"
       titleConvo: true
       titleModel: "Avaniel"
       modelDisplayLabel: "Avaniel"
-
