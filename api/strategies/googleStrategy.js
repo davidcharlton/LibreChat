@@ -17,7 +17,7 @@ module.exports = () =>
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: `${process.env.DOMAIN_SERVER}${process.env.GOOGLE_CALLBACK_URL}`,
+      callbackURL: "https://chat.theophilus.ai/oauth/google/callback",
       proxy: true,
     },
     googleLogin,
