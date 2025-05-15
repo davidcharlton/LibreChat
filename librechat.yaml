@@ -1,4 +1,4 @@
-version: "1.2.14"
+version: "1.2.15"
 
 endpoints:
   custom:
@@ -8,5 +8,9 @@ endpoints:
       models:
         fetch: true  # 👈 enables dynamic model fetching
       titleConvo: true
-      titleModel: "avaniel"
+      titleModel: "Avaniel"
       modelDisplayLabel: "ZionVM"
+interface:
+  endpointsMenu: true
+  modelSelect: true
+  agents: true
