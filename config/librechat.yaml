@@ -1,0 +1,16 @@
+version: "1.2.15"
+
+endpoints:
+  custom:
+    - name: "ZionVM"
+      apiKey: "dummy"
+      baseURL: "http://10.0.2.5:8000/v1"
+      models:
+        fetch: true  # 👈 enables dynamic model fetching
+      titleConvo: true
+      titleModel: "avaniel"
+      modelDisplayLabel: "ZionVM"
+interface:
+  endpointsMenu: true
+  modelSelect: true
+  agents: true
