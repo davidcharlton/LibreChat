@@ -5,17 +5,14 @@ endpoints:
     - name: ZionVM
       apiKey: xxx
       baseURL: http://10.0.2.5:8000/v1
-      models:
-        default: avaniel
-        available:
-          - name: avaniel
-            label: Avaniel
-          - name: ace
-            label: Ace
-          - name: theophilus
-            label: Theophilus
+      default: ["avaniel", "ace", "theophilus"]
+      available:
+        - name: avaniel
+          label: Avaniel
+        - name: ace
+          label: Ace
+        - name: theophilus
+          label: Theophilus
       titleConvo: true
-      titleModel: Avaniel
-      modelDisplayLabel: Avaniel
-      allowUserToChangeModel: true
-
+      titleModel: "avaniel"
+      modelDisplayLabel: "ZionVM"
