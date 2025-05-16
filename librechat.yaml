@@ -5,6 +5,10 @@ interface:
   modelSelect: true
   agents: true
 
+modelSpecs:
+  enforce: false
+  prioritize: false
+
 endpoints:
   custom:
     - name: "ZionVM"
