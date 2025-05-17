@@ -21,6 +21,8 @@ WORKDIR /app
 COPY librechat.yaml /config/librechat.yaml
 COPY librechat.yaml /app/librechat.yaml
 
+ENV CONFIG_PATH=/app/librechat.yaml
+
 RUN echo "YAML CHECK:" && cat /app/librechat.yaml
 
 USER node
