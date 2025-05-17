@@ -17,6 +17,9 @@ RUN uv --version
 RUN mkdir -p /app && chown node:node /app
 WORKDIR /app
 
+# Add custom configuration file
+COPY librechat.yaml /config/librechat.yaml
+
 USER node
 
 COPY --chown=node:node . .
@@ -36,9 +39,6 @@ RUN \
     npm cache clean --force
 
 RUN mkdir -p /app/client/public/images /app/api/logs
-
-# Add custom configuration file
-COPY librechat.yaml /config/librechat.yaml
 
 # Node API setup
 EXPOSE 3080
