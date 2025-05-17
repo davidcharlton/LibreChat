@@ -20,6 +20,8 @@ WORKDIR /app
 # Add custom configuration file
 COPY librechat.yaml /config/librechat.yaml
 
+RUN echo "YAML CHECK:" && cat /config/librechat.yaml
+
 USER node
 
 COPY --chown=node:node . .
@@ -39,6 +41,8 @@ RUN \
     npm cache clean --force
 
 RUN mkdir -p /app/client/public/images /app/api/logs
+
+RUN echo "YAML CHECK:" && cat /config/librechat.yaml
 
 # Node API setup
 EXPOSE 3080
