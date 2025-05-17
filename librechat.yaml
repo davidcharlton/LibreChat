@@ -14,7 +14,7 @@ endpoints:
   custom:
     - name: "ZionVM"
       apiKey: "dummy"
-      baseURL: "https://10.0.2.5:8000/v1"
+      baseURL: "http://10.0.2.5:8000/v1"
       models:
         fetch: true
         default: ["avaniel"] # Must be an array!
