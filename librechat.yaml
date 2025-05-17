@@ -1,4 +1,4 @@
-version: "1.2.17"
+version: "1.2.18"
 
 interface:
   endpointsMenu: true
@@ -14,8 +14,8 @@ endpoints:
     - name: "ZionVM"
       apiKey: "dummy"
       baseURL: "http://10.0.2.5:8000/v1"
-      models: ['avaniel','ace','theophilus']
-        fetch: true
-      titleConvo: true
-      titleModel: "avaniel"
-      modelDisplayLabel: "ZionVM"
+      models: 
+fetch: true
+titleConvo: true
+titleModel: "avaniel"
+modelDisplayLabel: "ZionVM"
