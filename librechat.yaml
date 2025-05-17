@@ -1,4 +1,4 @@
-version: "1.2.21"
+version: "1.2.23"
 
 interface:
   endpointsMenu: true
@@ -8,7 +8,7 @@ interface:
 modelSpecs:
   enforce: false
   prioritize: false
-  list: [] # Required explicitly by LibreChat schema
+  list: []  # Must be explicitly present (even if empty array)
 
 endpoints:
   custom:
@@ -17,6 +17,6 @@ endpoints:
       baseURL: "http://10.0.2.5:8000/v1"
       models:
         fetch: true
-        default: ["avaniel"] # MUST be an array, not a string
+        default: ["avaniel"] # Must be an array!
       titleConvo: true
       modelDisplayLabel: "ZionVM"
