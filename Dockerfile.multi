@@ -52,6 +52,9 @@ COPY --from=data-provider-build /app/packages/data-provider/dist /app/packages/d
 ENV NODE_OPTIONS="--max-old-space-size=2048"
 RUN npm run build
 
+# Add custom configuration file
+COPY librechat.yaml /config/librechat.yaml
+
 # API setup (including client dist)
 FROM base-min AS api-build
 # Add `uv` for extended MCP support
