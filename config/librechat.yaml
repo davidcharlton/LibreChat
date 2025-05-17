@@ -1,9 +1,9 @@
-version: "1.2.17"
+version: "1.2.20"
 
 interface:
   endpointsMenu: true
   modelSelect: true
-  agents: true
+  agents: true  # Ensure agents UI is enabled
 
 modelSpecs:
   enforce: false
@@ -15,7 +15,8 @@ endpoints:
       apiKey: "dummy"
       baseURL: "http://10.0.2.5:8000/v1"
       models:
-        fetch: true
+        fetch: true  # This setting instructs LibreChat to dynamically fetch models (agents)
+        default: "avaniel"
       titleConvo: true
       titleModel: "avaniel"
       modelDisplayLabel: "ZionVM"
