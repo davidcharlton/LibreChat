@@ -32,6 +32,7 @@ jobs:
         push: true
         tags: theophiluslibrechatacr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_97fae637feb14da7b8ef306210f219dc }}/librechat:${{ github.sha }}
         file: ./Dockerfile
+        no-cache: true  # <-- Forces rebuild
 
   deploy:
     runs-on: ubuntu-latest
