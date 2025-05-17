@@ -1,17 +1,28 @@
-**/.circleci
-**/.editorconfig
-**/.dockerignore
-**/.git
-**/.DS_Store
-**/.vscode
-**/node_modules
+# Ignore version control
+.git
+.gitignore
 
-# Specific patterns to ignore
-data-node
-meili_data*
-#librechat*
-Dockerfile*
-docs
+# Ignore editor settings
+.vscode
+.DS_Store
+.editorconfig
 
-# Ignore all hidden files
-.*
+# Ignore node_modules – will be installed in Docker anyway
+node_modules
+
+# Optional: ignore docs and tests unless needed
+docs/
+tests/
+coverage/
+
+# Ignore CircleCI config
+.circleci/
+
+# Ignore local config or temp data
+*.log
+*.swp
+*.tmp
+*.bak
+
+# ❗ Keep .env if it's used in build
+# .env
