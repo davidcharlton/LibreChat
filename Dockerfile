@@ -37,6 +37,9 @@ RUN \
 
 RUN mkdir -p /app/client/public/images /app/api/logs
 
+# Add custom configuration file
+COPY librechat.yaml /config/librechat.yaml
+
 # Node API setup
 EXPOSE 3080
 ENV HOST=0.0.0.0
