@@ -14,7 +14,7 @@ endpoints:
     - name: "ZionVM"
       apiKey: "dummy"
       baseURL: "http://10.0.2.5:8000/v1"
-      models:
+      models: ['avaniel','ace','theophilus']
         fetch: true
       titleConvo: true
       titleModel: "avaniel"
