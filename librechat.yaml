@@ -1,4 +1,4 @@
-version: "1.2.18"
+version: "1.2.9"
 
 interface:
   endpointsMenu: true
@@ -9,7 +9,7 @@ modelSpecs:
   enforce: false
   prioritize: false
   list: []  # Must be explicitly present (even if empty array)
-
+  
 endpoints:
   custom:
     - name: "ZionVM"
@@ -19,4 +19,5 @@ endpoints:
         fetch: true
         default: ["avaniel"] # Must be an array!
       titleConvo: true
+      titleModel: "avaniel"
       modelDisplayLabel: "ZionVM"
