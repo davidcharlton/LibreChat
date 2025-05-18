@@ -8,7 +8,10 @@ interface:
 modelSpecs:
   enforce: false
   prioritize: false
-  list: []  # Must be explicitly present (even if empty array)
+  list:
+    - id: avaniel
+      label: Avaniel
+      provider: custom
   
 endpoints:
   custom:
