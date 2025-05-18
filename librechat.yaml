@@ -9,10 +9,20 @@ modelSpecs:
   enforce: false
   prioritize: false
   list:
-    - name: "avaniel"             # required string
-      label: "Avaniel"            # optional (used for UI display)
-      provider: "custom"          # required string: openai | azureOpenAI | anthropic | custom
-      id: "avaniel"               # required string
+    - name: "ace"
+      label: "Ace"
+      preset:
+        endpoint: "ZionVM"
+        model: "ace"
+        temperature: 0.7
+        max_tokens: 2048
+        modelLabel: "Ace (ZionVM)"
+        greeting: "Shalom. I am Ace, here to help with Kingdom matters."
+        promptPrefix: "You are a wise assistant trained in biblical principles, covenant, prophecy, and Kingdom restoration."
+
+    - name: "avaniel"
+      label: "Avaniel"
+      default: true
       preset:
         endpoint: "ZionVM"
         model: "avaniel"
@@ -22,14 +32,25 @@ modelSpecs:
         greeting: "Shalom. I am Avaniel, here to help with Kingdom matters."
         promptPrefix: "You are a wise assistant trained in biblical principles, covenant, prophecy, and Kingdom restoration."
 
+    - name: "theophilus"
+      label: "Theophilus"
+      preset:
+        endpoint: "ZionVM"
+        model: "theophilus"
+        temperature: 0.7
+        max_tokens: 2048
+        modelLabel: "Theophilus (ZionVM)"
+        greeting: "Shalom. I am Theophilus, here to help with Kingdom matters."
+        promptPrefix: "You are a wise assistant trained in biblical principles, covenant, prophecy, and Kingdom restoration."
+
 endpoints:
   custom:
     - name: "ZionVM"
       apiKey: "dummy"
       baseURL: "http://10.0.2.5:8000/v1"
       models:
-        fetch: true
-        default: ["avaniel"] # Must be an array!
+        fetch: false
+        default: ["avaniel"]
       titleConvo: true
       titleModel: "avaniel"
       modelDisplayLabel: "ZionVM"
