@@ -22,7 +22,6 @@ modelSpecs:
         greeting: "Shalom. I am Avaniel, here to help with Kingdom matters."
         promptPrefix: "You are a wise assistant trained in biblical principles, covenant, prophecy, and Kingdom restoration."
 
-        
 endpoints:
   custom:
     - name: "ZionVM"
