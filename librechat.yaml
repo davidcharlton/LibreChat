@@ -15,6 +15,7 @@ modelSpecs:
       id: "avaniel"               # required string
       preset:
         name: "default"
+        endpoint: "custom" 
         
 endpoints:
   custom:
