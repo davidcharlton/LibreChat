@@ -9,10 +9,12 @@ modelSpecs:
   enforce: false
   prioritize: false
   list:
-    - id: avaniel
-      label: Avaniel
-      provider: custom
-  
+    - name: "avaniel"             # required string
+      label: "Avaniel"            # optional (used for UI display)
+      provider: "custom"          # required string: openai | azureOpenAI | anthropic | custom
+      id: "avaniel"               # required string
+      preset: "default"           # required string
+      
 endpoints:
   custom:
     - name: "ZionVM"
