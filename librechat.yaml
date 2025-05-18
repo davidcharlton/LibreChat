@@ -13,8 +13,9 @@ modelSpecs:
       label: "Avaniel"            # optional (used for UI display)
       provider: "custom"          # required string: openai | azureOpenAI | anthropic | custom
       id: "avaniel"               # required string
-      preset: "default"           # required string
-      
+      preset:
+        name: "default"
+        
 endpoints:
   custom:
     - name: "ZionVM"
