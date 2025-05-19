@@ -4,6 +4,7 @@ interface:
   endpointsMenu: true
   modelSelect: true
   agents: true
+  fileupload: true
 
 modelSpecs:
   enforce: false
@@ -54,6 +55,12 @@ endpoints:
       titleConvo: true
       titleModel: "avaniel"
       modelDisplayLabel: "ZionVM"
+      upload:
+        url: "http://10.0.2.5:8000/v1/upload"
+        fieldName: "file"
+        headers:
+          X-Agent-Name: "{{model}}"
+          Authorization: "Bearer dummy"   # if you need one, or remove      
       history:
         endpoint: "http://10.0.2.5:8000/v1/chat/history"
         queryParam: "conversation_id"
