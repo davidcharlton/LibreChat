@@ -27,9 +27,10 @@ jobs:
       - name: Azure Login
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.THEOPHILUSLIBRECHAT_AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.THEOPHILUSLIBRECHAT_AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.THEOPHILUSLIBRECHAT_AZURE_SUBSCRIPTION_ID }}
+          client-id: 0f2562c4-7c40-4f28-ae0e-9f8f5225dd91
+          tenant-id: 2ff75e56-8628-4c83-9c39-d4a84f427bb7
+          subscription-id: eba00d8e-408f-467f-a7c8-ae20ca5c615a
+          auth-type: federated
 
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v2
